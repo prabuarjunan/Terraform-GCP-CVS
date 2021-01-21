@@ -1,0 +1,10 @@
+"#!/bin/bash\n",
+"sudo yum update\n",
+"sudo yum install -y nfs-utils\n",
+"sudo apt-get install nfs-common\n",
+"#Creating new directory\n",
+"sudo mkdir /admiring-sad-bardeen\n",
+"#Permissions for the Direcotry\n",
+"sudo chmod -R 755 cftvolume",
+"# mount ontap Volumes\n",
+"sudo mount -t nfs -o rw,hard,rsize=65536,wsize=65536,vers=3,tcp 10.241.7.2:/admiring-sad-bardeen /admiring-sad-bardeen"

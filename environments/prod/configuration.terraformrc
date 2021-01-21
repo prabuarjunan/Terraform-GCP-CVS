@@ -1,0 +1,12 @@
+terraform {
+  required_providers {
+    netapp-gcp = {
+      source = "NetApp/netapp-gcp"
+      version = "20.11.1"
+    }
+  }
+}
+
+provider "netapp-gcp" {
+  # Configuration options
+}
